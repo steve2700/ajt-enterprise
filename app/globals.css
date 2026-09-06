@@ -1,16 +1,21 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+
 @custom-variant dark (&:is(.dark *));
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Geist', 'Geist Fallback';
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  --color-brand-black: #1a1a1a;
-  --color-brand-gold: #e8a33d;
-  --color-brand-surface: #f5f4f0;
+
+  --color-brand-black: #0d0705;
+  --color-brand-gold: #dcb068;
+  --color-brand-gold-light: #f4e78b;
+  --color-brand-surface: #1a1013;
   --color-brand-white: #ffffff;
-  --color-brand-red: #b91c1c;
+  --color-brand-red: #b8161d;
+
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -25,28 +30,38 @@
   --color-primary: var(--primary);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
 }
+
 :root {
-  --background: #f5f4f0;
-  --foreground: #1a1a1a;
-  --primary: #1a1a1a;
-  --primary-foreground: #ffffff;
-  --secondary: #f5f4f0;
-  --secondary-foreground: #1a1a1a;
-  --muted: #e8e7e3;
-  --muted-foreground: #555555;
-  --accent: #e8a33d;
-  --accent-foreground: #1a1a1a;
-  --destructive: #b91c1c;
-  --border: #d4d3cf;
-  --input: #d4d3cf;
-  --ring: #e8a33d;
-  --radius: 0.25rem;
+  --background: #0d0705;
+  --foreground: #f5f4f0;
+
+  --primary: #dcb068;
+  --primary-foreground: #1a1013;
+
+  --secondary: #1a1013;
+  --secondary-foreground: #ffffff;
+
+  --muted: #241a1c;
+  --muted-foreground: #b3aca8;
+
+  --accent: #b8161d;
+  --accent-foreground: #ffffff;
+
+  --destructive: #b8161d;
+
+  --border: #2a2022;
+  --input: #2a2022;
+  --ring: #dcb068;
+
+  --radius: 0.4rem;
 }
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
