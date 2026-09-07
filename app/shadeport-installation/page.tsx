@@ -19,7 +19,7 @@ const PHONE_TEL = '0658677363'
 export const metadata: Metadata = {
   title: 'Shadeport Installation Gauteng & Limpopo | AJT Enterprise',
   description:
-    'Professional shadeport installation across Gauteng & Limpopo. Custom-built, weatherproof shadeports for homes and businesses, installed by certified fitters. Free written quote — call 065 867 7363.',
+    'Professional shadeport installation across Gauteng & Limpopo. Custom-built, weatherproof shadeports for homes and businesses, installed by certified fitters. Free written quote, call 065 867 7363.',
   keywords: [
     'shadeport installation Gauteng',
     'shadeport installation Limpopo',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: 'AJT Enterprise',
     title: 'Shadeport Installation Gauteng & Limpopo | AJT Enterprise',
     description:
-      'Custom-built, weatherproof shadeport installation for homes and businesses across Gauteng & Limpopo. Free written quote — call 065 867 7363.',
+      'Custom-built, weatherproof shadeport installation for homes and businesses across Gauteng & Limpopo. Free written quote, call 065 867 7363.',
     images: [{ url: '/images/shadeport-installation.png', width: 1200, height: 900, alt: 'Shadeport installation by AJT Enterprise', type: 'image/png' }],
   },
   twitter: {
@@ -59,7 +59,7 @@ const faqs = [
   {
     question: 'How much does a shadeport installation cost?',
     answer:
-      'The cost depends on the size, span and finish of the structure, and on site access. Because every shadeport is built to spec, we give you a clear written quote before any work begins — no hidden fees and no surprises on the invoice. Call 065 867 7363 for a free, no-obligation quote.',
+      'The cost depends on the size, span and finish of the structure, and on site access. Because every shadeport is built to spec, we give you a clear written quote before any work begins, with no hidden fees and no surprises on the invoice. Call 065 867 7363 for a free, no-obligation quote.',
   },
   {
     question: 'How long does it take to install a shadeport?',
@@ -74,19 +74,19 @@ const faqs = [
   {
     question: 'Are your shadeports built to handle our weather?',
     answer:
-      'Every structure is engineered and anchored for local conditions — harsh sun, strong wind and summer storms. We use quality frames and cladding rated for South African weather, not a generic import build.',
+      'Every structure is engineered and anchored for local conditions, including harsh sun, strong wind and summer storms. We use quality frames and cladding rated for South African weather, not a generic import build.',
   },
   {
     question: 'Which areas do you cover for shadeport installation?',
     answer:
-      'We install shadeports across Gauteng — including Johannesburg, Pretoria, Sandton, Centurion, Midrand, Randburg, Roodepoort and Vereeniging — and across Limpopo, including Polokwane, Tzaneen, Mokopane, Thohoyandou, Lephalale and Bela-Bela.',
+      'We install shadeports across Gauteng, including Johannesburg, Pretoria, Sandton, Centurion, Midrand, Randburg, Roodepoort and Vereeniging, and across Limpopo, including Polokwane, Tzaneen, Mokopane, Thohoyandou, Lephalale and Bela-Bela.',
   },
 ]
 
 const benefits = [
   {
     title: 'Custom-Built To Your Space',
-    body: 'Every shadeport is measured and built to fit your driveway, patio or parking area exactly — never a one-size-fits-all kit.',
+    body: 'Every shadeport is measured and built to fit your driveway, patio or parking area exactly, never a one-size-fits-all kit.',
   },
   {
     title: 'Weatherproof Engineering',
@@ -220,7 +220,7 @@ export default function ShadeportInstallationPage() {
             </h1>
             <p className="text-white/65 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
               Weatherproof shadeports, built to spec and professionally installed at your home
-              or business — engineered to handle Gauteng and Limpopo&apos;s sun, wind and summer storms.
+              or business, engineered to handle Gauteng and Limpopo&apos;s sun, wind and summer storms.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -268,15 +268,15 @@ export default function ShadeportInstallationPage() {
               </h2>
               <div className="w-12 h-0.5 mb-6" style={{ background: GOLD }} />
               <p className="text-[#1a1a1a]/70 text-base md:text-lg leading-relaxed mb-5">
-                A shadeport should protect your vehicles and outdoor spaces for years — not sag,
+                A shadeport should protect your vehicles and outdoor spaces for years, not sag,
                 rust or blow loose after the first big storm. That&apos;s why every AJT Enterprise
                 shadeport is custom-measured, built with weather-rated materials and installed by
                 a certified team that treats your property with care.
               </p>
               <p className="text-[#1a1a1a]/70 text-base md:text-lg leading-relaxed">
                 From a single driveway cover to full commercial parking, we handle the entire
-                process — site visit, design, manufacture and installation — as one dependable team
-                across Gauteng and Limpopo.
+                process, from site visit to design, manufacture and installation, as one dependable
+                team across Gauteng and Limpopo.
               </p>
             </div>
 
