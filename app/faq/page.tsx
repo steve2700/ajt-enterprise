@@ -423,7 +423,6 @@ export default function FAQPage() {
               </ul>
             </div>
           </aside>
-        </div>
       </div>
 
       {/* ── Bottom CTA ── */}
