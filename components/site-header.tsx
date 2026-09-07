@@ -156,7 +156,7 @@ export default function SiteHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0 group" aria-label="Madimetsa Logistics, home">
             <Image
-              src="/logo-horizontal-light.png"
+              src="/logo-horizontal.png"
               alt="Madimetsa Logistics"
               width={520}
               height={130}
