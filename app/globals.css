@@ -9,12 +9,19 @@
   --font-sans: 'Geist', 'Geist Fallback';
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
 
+  /* Core brand palette, sampled directly from the AJ Enterprise logo */
   --color-brand-black: #0d0705;
+  --color-brand-black-soft: #1a1013;
+
+  --color-brand-red: #b8161d;
+  --color-brand-red-light: #fc4d53;
+  --color-brand-red-dark: #420203;
+
   --color-brand-gold: #dcb068;
   --color-brand-gold-light: #f4e78b;
-  --color-brand-surface: #1a1013;
+  --color-brand-gold-dark: #8a6535;
+
   --color-brand-white: #ffffff;
-  --color-brand-red: #b8161d;
 
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -41,6 +48,7 @@
   --background: #0d0705;
   --foreground: #f5f4f0;
 
+  /* Gold carries headings, nav highlights, primary buttons - same role it plays in the logo */
   --primary: #dcb068;
   --primary-foreground: #1a1013;
 
@@ -50,6 +58,7 @@
   --muted: #241a1c;
   --muted-foreground: #b3aca8;
 
+  /* Red carries CTAs ("Call Now" style buttons) - same role it plays in the logo */
   --accent: #b8161d;
   --accent-foreground: #ffffff;
 
@@ -60,6 +69,17 @@
   --ring: #dcb068;
 
   --radius: 0.4rem;
+
+  /* Metallic gradients matching the logo's red "A" and gold "J" shading */
+  --gradient-red: linear-gradient(180deg, #ff8f8f 0%, #fc4d53 20%, #b8161d 55%, #420203 100%);
+  --gradient-gold: linear-gradient(
+    180deg,
+    #fff8dd 0%,
+    #f4e78b 22%,
+    #dcb068 50%,
+    #b78a4d 75%,
+    #6e4a26 100%
+  );
 }
 
 @layer base {
@@ -71,5 +91,28 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  /* Gradient text/surfaces for headings, monogram accents, and premium CTAs.
+     Usage: <h1 class="text-gradient-gold">Shadeports & Carports Built To Last.</h1> */
+  .text-gradient-gold {
+    background-image: var(--gradient-gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-red {
+    background-image: var(--gradient-red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .bg-gradient-gold {
+    background-image: var(--gradient-gold);
+  }
+  .bg-gradient-red {
+    background-image: var(--gradient-red);
   }
 }
