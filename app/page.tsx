@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     siteName: 'AJT Enterprise',
     title: 'AJT Enterprise | Shadeport & Carport Installation, Repairs & Maintenance',
     description: "Gauteng & Limpopo's trusted shadeport and carport specialists. New installations, repairs and maintenance. Call 065 867 7363.",
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AJT Enterprise Shadeports & Carports', type: 'image/jpeg' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'AJT Enterprise Shadeports & Carports', type: 'image/png' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AJT Enterprise | Shadeport & Carport Installation, Repairs & Maintenance',
     description: 'New shadeport & carport installations, repairs and maintenance across Gauteng & Limpopo. Call 065 867 7363.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true, follow: true,
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { href: '/shadeport-installation', label: 'Shadeport Installation', desc: 'New structures, built to spec', image: '/images/shadeport-installation.jpg' },
-  { href: '/cantilever-shadeports', label: 'Cantilever Shadeports', desc: 'No centre poles, clean sightlines', image: '/images/cantilever-shadeports.jpg' },
-  { href: '/carports', label: 'Carports', desc: 'Custom single & double shelters', image: '/images/carports.jpg' },
-  { href: '/carport-installation', label: 'Carport Installation', desc: 'Professional fitting at your property', image: '/images/carport-installation.jpg' },
-  { href: '/parking-bay-shadeports', label: 'Parking Bay Shadeports', desc: 'Commercial & residential cover', image: '/images/parking-bay-shadeports.jpg' },
-  { href: '/shadeport-repairs', label: 'Shadeport Repairs', desc: 'Frames, cladding & fittings fixed', image: '/images/shadeport-repairs.jpg' },
-  { href: '/shadeport-maintenance', label: 'Shadeport Maintenance', desc: 'Scheduled servicing & inspections', image: '/images/shadeport-maintenance.jpg' },
-  { href: '/shadeport-recovering', label: 'Shadeport Re-Covering', desc: 'Fabric & roof sheet replacement', image: '/images/shadeport-recovering.jpg' },
+  { href: '/shadeport-installation', label: 'Shadeport Installation', desc: 'New structures, built to spec', image: '/images/shadeport-installation.png' },
+  { href: '/cantilever-shadeports', label: 'Cantilever Shadeports', desc: 'No centre poles, clean sightlines', image: '/images/cantilever-shadeports.png' },
+  { href: '/carports', label: 'Carports', desc: 'Custom single & double shelters', image: '/images/carports.png' },
+  { href: '/carport-installation', label: 'Carport Installation', desc: 'Professional fitting at your property', image: '/images/carport-installation.png' },
+  { href: '/parking-bay-shadeports', label: 'Parking Bay Shadeports', desc: 'Commercial & residential cover', image: '/images/parking-bay-shadeports.png' },
+  { href: '/shadeport-repairs', label: 'Shadeport Repairs', desc: 'Frames, cladding & fittings fixed', image: '/images/shadeport-repairs.png' },
+  { href: '/shadeport-maintenance', label: 'Shadeport Maintenance', desc: 'Scheduled servicing & inspections', image: '/images/shadeport-maintenance.png' },
+  { href: '/shadeport-recovering', label: 'Shadeport Re-Covering', desc: 'Fabric & roof sheet replacement', image: '/images/shadeport-recovering.png' },
 ]
 
 // Gauteng & Limpopo coverage. Add a slug to builtAreaSlugs the moment its
@@ -217,7 +217,7 @@ const localBusinessSchema = {
         name: 'Shadeport & Carport Services',
         itemListElement: services.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.label } })),
       },
-      image: 'https://www.ajtenterprise.co.za/og-image.jpg',
+      image: 'https://www.ajtenterprise.co.za/og-image.png',
     },
     {
       '@type': 'WebSite',
@@ -245,7 +245,7 @@ export default function HomePage() {
       >
         <div className="absolute inset-0 z-0 hidden md:block">
           <Image
-            src="/images/hero-shadeport.jpg"
+            src="/images/hero-shadeport.png"
             alt="AJT Enterprise cantilever shadeport installation, Gauteng"
             fill
             priority
@@ -302,7 +302,7 @@ export default function HomePage() {
         <div className="relative z-10 md:hidden">
           <div className="relative aspect-[3/2] w-full">
             <Image
-              src="/images/hero-shadeport.jpg"
+              src="/images/hero-shadeport.png"
               alt="AJT Enterprise shadeport installation"
               fill
               priority
@@ -365,12 +365,22 @@ export default function HomePage() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={service.label}
+                    alt={`${service.label} by AJT Enterprise — Gauteng & Limpopo`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: `linear-gradient(to top, ${BG}90, transparent 60%)` }} />
+                  <div className="absolute bottom-2 right-2 rounded-md p-1" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
+                    <Image
+                      src="/images/aj-enterprise-logo.png"
+                      alt=""
+                      width={52}
+                      height={37}
+                      className="h-6 w-auto opacity-90"
+                      aria-hidden="true"
+                    />
+                  </div>
                 </div>
                 <div className="p-5 flex-1 flex flex-col">
                   <h3 className="font-bold text-[#1a1a1a] text-sm mb-1 leading-snug">{service.label}</h3>
@@ -415,8 +425,8 @@ export default function HomePage() {
 
             <div className="relative min-h-[420px] lg:min-h-full overflow-hidden">
               <Image
-                src="/images/why-choose-us.jpg"
-                alt="AJT Enterprise installation team on site"
+                src="/images/why-choose-us.png"
+                alt="Completed cantilever shadeport over a residential driveway by AJT Enterprise"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -585,7 +595,7 @@ export default function HomePage() {
 
             <div className="relative aspect-[4/3] overflow-hidden group order-2 md:order-1">
               <Image
-                src="/images/shadeport-quote.jpg"
+                src="/images/shadeport-quote.png"
                 alt="AJT Enterprise on-site shadeport measurement and quote"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
@@ -593,6 +603,16 @@ export default function HomePage() {
               />
               <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2" style={{ borderColor: GOLD }} />
               <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2" style={{ borderColor: GOLD }} />
+              <div className="absolute top-3 right-3 rounded-md p-1.5" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
+                <Image
+                  src="/images/aj-enterprise-logo.png"
+                  alt=""
+                  width={84}
+                  height={60}
+                  className="h-9 w-auto opacity-90"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
 
             <div className="order-1 md:order-2">
