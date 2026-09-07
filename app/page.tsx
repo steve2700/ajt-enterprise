@@ -146,7 +146,7 @@ const trustPillars = [
 const homepageFAQs = [
   {
     question: 'How long does a shadeport or carport installation take?',
-    answer: "Most single carports and standard shadeports are installed within a day or two once the design is confirmed. Larger cantilever structures or multi-bay parking cover can take longer depending on size and site access — we'll give you an accurate timeline with your quote.",
+    answer: "Most single carports and standard shadeports are installed within a day or two once the design is confirmed. Larger cantilever structures or multi-bay parking cover can take longer depending on size and site access, and we'll give you an accurate timeline with your quote.",
   },
   {
     question: 'Do you repair existing shadeports and carports, or only build new ones?',
@@ -154,7 +154,7 @@ const homepageFAQs = [
   },
   {
     question: 'What areas do you cover?',
-    answer: 'We install and maintain shadeports and carports across Gauteng — including Johannesburg, Pretoria, Sandton, Centurion, Midrand, Randburg, Roodepoort and Vereeniging — and across Limpopo, including Polokwane, Tzaneen, Mokopane, Thohoyandou, Lephalale and Bela-Bela.',
+    answer: 'We install and maintain shadeports and carports across Gauteng, including Johannesburg, Pretoria, Sandton, Centurion, Midrand, Randburg, Roodepoort and Vereeniging, and across Limpopo, including Polokwane, Tzaneen, Mokopane, Thohoyandou, Lephalale and Bela-Bela.',
   },
 ]
 
@@ -271,7 +271,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-white/65 text-base md:text-lg leading-relaxed mb-10 max-w-md">
-                New shadeport and carport installations, repairs and maintenance —
+                New shadeport and carport installations, repairs and maintenance,
                 built to handle Gauteng and Limpopo&apos;s sun, wind and summer storms.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -551,7 +551,7 @@ export default function HomePage() {
               </h2>
               <p className="text-white/70 text-base md:text-lg leading-relaxed">
                 Tell us what you need covered and we&apos;ll come back with an
-                accurate, no-obligation quote — installation, repairs or maintenance.
+                accurate, no-obligation quote for installation, repairs or maintenance.
               </p>
             </div>
             <div className="flex flex-col items-start md:items-end gap-3 shrink-0">
@@ -603,7 +603,7 @@ export default function HomePage() {
               <div className="w-10 h-0.5 mb-6" style={{ background: GOLD }} />
               <p className="text-base leading-relaxed text-[#1a1a1a]/65 mb-4">
                 Costs vary with the size of the structure, whether it&apos;s
-                post-supported or cantilever, and the cover material — shade
+                post-supported or cantilever, and the cover material, whether shade
                 fabric, polycarbonate or IBR roof sheeting.
               </p>
               <p className="text-base leading-relaxed text-[#1a1a1a]/65 mb-8">
@@ -692,7 +692,7 @@ export default function HomePage() {
                 Ready To Get Your Shade Sorted?
               </h2>
               <p className="text-white/35 text-sm">
-                New installation, repair or maintenance — one call gets it moving.
+                New installation, repair or maintenance, one call gets it moving.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
