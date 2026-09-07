@@ -6,23 +6,26 @@ import { cn } from '@/lib/utils'
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false)
 
-  // Phone number 072 308 9983 formatted for WhatsApp (SA country code 27, drop leading 0)
-  const phoneNumber = '27723089983'
-  const message = encodeURIComponent("Hi Madimetsa Logistics! I'd like to enquire about your services.")
+  // Phone number 065 867 7363 formatted for WhatsApp (SA country code 27, drop leading 0)
+  const phoneNumber = '27658677363'
+  const message = encodeURIComponent(
+    "Hi AJT Enterprise! I'd like to enquire about your shadeport or carport services."
+  )
 
-  // Live conversion tracking function with window redirect delay to prevent tag dropping
   const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     // 1. Stop the browser from instantly navigating away
     e.preventDefault()
 
-    // 2. Fire the Google Ads conversion event safely
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'conversion', {
-        send_to: 'AW-18328564945/wrz6CNb4x9EcENHp3qNE',
-      })
-    }
+    // 2. Fire the Google Ads conversion event, if you've set one up for AJT Enterprise
+    // Replace the send_to value below with AJT Enterprise's own conversion ID/label
+    // (Madimetsa's ID has been removed since it belongs to a different Google Ads account).
+    // if (typeof window !== 'undefined' && (window as any).gtag) {
+    //   (window as any).gtag('event', 'conversion', {
+    //     send_to: 'AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXXX',
+    //   })
+    // }
 
-    // 3. Open WhatsApp in a new tab after a 150ms transmission window
+    // 3. Open WhatsApp in a new tab after a short transmission window
     const url = `https://wa.me/${phoneNumber}?text=${message}`
     setTimeout(() => {
       window.open(url, '_blank', 'noopener,noreferrer')
@@ -55,7 +58,7 @@ export default function WhatsAppButton() {
       >
         {/* Pulsing Outer Ring */}
         <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 pointer-events-none" />
-        
+
         {/* Official WhatsApp SVG Icon */}
         <svg
           className="relative z-10 w-7 h-7 text-white transition-colors duration-300"
