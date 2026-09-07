@@ -204,8 +204,7 @@ export default function FAQPage() {
       </section>
 
       {/* ── Main content: FAQs + sidebar ── */}
-      <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-        <div className="grid lg:grid-cols-[1fr_280px] gap-12 lg:gap-16 items-start">
+      <div className="max-w-6xl mx-auto px-6 py-12 md:py-16 bg-white">
 
           {/* FAQ list */}
           <div>
