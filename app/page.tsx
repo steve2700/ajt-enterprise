@@ -371,6 +371,16 @@ export default function HomePage() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: `linear-gradient(to top, ${BG}90, transparent 60%)` }} />
+                  <div className="absolute bottom-2 right-2 rounded-md p-1" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
+                    <Image
+                      src="/images/aj-enterprise-logo.png"
+                      alt=""
+                      width={52}
+                      height={37}
+                      className="h-6 w-auto opacity-90"
+                      aria-hidden="true"
+                    />
+                  </div>
                 </div>
                 <div className="p-5 flex-1 flex flex-col">
                   <h3 className="font-bold text-[#1a1a1a] text-sm mb-1 leading-snug">{service.label}</h3>
@@ -422,6 +432,16 @@ export default function HomePage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0" style={{ background: `linear-gradient(to right, transparent, ${BG}99)` }} />
+              <div className="absolute top-4 right-4 rounded-md p-1.5" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
+                <Image
+                  src="/images/aj-enterprise-logo.png"
+                  alt=""
+                  width={84}
+                  height={60}
+                  className="h-9 w-auto opacity-90"
+                  aria-hidden="true"
+                />
+              </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="grid grid-cols-2 gap-4">
                   {[
@@ -593,6 +613,16 @@ export default function HomePage() {
               />
               <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2" style={{ borderColor: GOLD }} />
               <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2" style={{ borderColor: GOLD }} />
+              <div className="absolute top-3 right-3 rounded-md p-1.5" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
+                <Image
+                  src="/images/aj-enterprise-logo.png"
+                  alt=""
+                  width={84}
+                  height={60}
+                  className="h-9 w-auto opacity-90"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
 
             <div className="order-1 md:order-2">
