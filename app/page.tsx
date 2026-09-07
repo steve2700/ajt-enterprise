@@ -426,22 +426,12 @@ export default function HomePage() {
             <div className="relative min-h-[420px] lg:min-h-full overflow-hidden">
               <Image
                 src="/images/why-choose-us.png"
-                alt="AJT Enterprise installation team on site"
+                alt="Completed cantilever shadeport over a residential driveway by AJT Enterprise"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0" style={{ background: `linear-gradient(to right, transparent, ${BG}99)` }} />
-              <div className="absolute top-4 right-4 rounded-md p-1.5" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
-                <Image
-                  src="/images/aj-enterprise-logo.png"
-                  alt=""
-                  width={84}
-                  height={60}
-                  className="h-9 w-auto opacity-90"
-                  aria-hidden="true"
-                />
-              </div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="grid grid-cols-2 gap-4">
                   {[
