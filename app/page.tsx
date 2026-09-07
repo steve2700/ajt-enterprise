@@ -254,8 +254,8 @@ export default function HomePage() {
             sizes="100vw"
             quality={85}
           />
-          <div className="absolute inset-0" style={{ background: \`linear-gradient(90deg, \${BG} 0%, \${BG}d9 55%, \${BG}40 100%)\` }} />
-          <div className="absolute inset-x-0 bottom-0 h-40" style={{ background: \`linear-gradient(to top, \${BG}, transparent)\` }} />
+          <div className="absolute inset-0" style={{ background: `linear-gradient(90deg, ${BG} 0%, ${BG}d9 55%, ${BG}40 100%)` }} />
+          <div className="absolute inset-x-0 bottom-0 h-40" style={{ background: `linear-gradient(to top, ${BG}, transparent)` }} />
         </div>
 
         <div className="relative z-10 flex-1 flex items-center">
@@ -266,7 +266,7 @@ export default function HomePage() {
               </p>
               <h1 className="font-black text-white leading-[1.03] mb-6" style={{ fontSize: 'clamp(2.6rem, 6.5vw, 5rem)' }}>
                 Shade That<br />
-                <span style={{ backgroundImage: \`linear-gradient(135deg, \${GOLD_LIGHT}, \${GOLD})\`, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>
+                <span style={{ backgroundImage: `linear-gradient(135deg, ${GOLD_LIGHT}, ${GOLD})`, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent' }}>
                   Stands The Test.
                 </span>
               </h1>
@@ -288,7 +288,7 @@ export default function HomePage() {
                 </a>
                 <Link
                   href="/contact"
-                  style={{ borderColor: \`\${GOLD}80\`, color: GOLD }}
+                  style={{ borderColor: `${GOLD}80`, color: GOLD }}
                   className="inline-flex items-center justify-center px-8 py-4 border font-semibold text-base hover:brightness-110 transition-all"
                 >
                   Get a Free Quote
@@ -311,13 +311,13 @@ export default function HomePage() {
               sizes="100vw"
               quality={82}
             />
-            <div className="absolute inset-x-0 top-0 h-16" style={{ background: \`linear-gradient(to bottom, \${BG}, transparent)\` }} />
-            <div className="absolute inset-x-0 bottom-0 h-16" style={{ background: \`linear-gradient(to top, \${BG}, transparent)\` }} />
+            <div className="absolute inset-x-0 top-0 h-16" style={{ background: `linear-gradient(to bottom, ${BG}, transparent)` }} />
+            <div className="absolute inset-x-0 bottom-0 h-16" style={{ background: `linear-gradient(to top, ${BG}, transparent)` }} />
           </div>
         </div>
 
         {/* Trust pillars */}
-        <div className="relative z-10 border-t backdrop-blur-sm" style={{ borderColor: \`\${GOLD}26\`, background: 'rgba(0,0,0,0.6)' }}>
+        <div className="relative z-10 border-t backdrop-blur-sm" style={{ borderColor: `${GOLD}26`, background: 'rgba(0,0,0,0.6)' }}>
           <div className="max-w-6xl mx-auto px-6 py-6 md:py-8">
             <dl className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-6">
               {trustPillars.map((pillar) => (
@@ -365,12 +365,12 @@ export default function HomePage() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={\`\${service.label} by AJT Enterprise, Gauteng & Limpopo\`}
+                    alt={`${service.label} by AJT Enterprise, Gauteng & Limpopo`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: \`linear-gradient(to top, \${BG}90, transparent 60%)\` }} />
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity" style={{ background: `linear-gradient(to top, ${BG}90, transparent 60%)` }} />
                   <div className="absolute bottom-2 right-2 rounded-md p-1" style={{ background: 'rgba(13,7,5,0.55)', backdropFilter: 'blur(2px)' }}>
                     <Image
                       src="/images/aj-enterprise-logo.png"
@@ -431,7 +431,7 @@ export default function HomePage() {
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0" style={{ background: \`linear-gradient(to right, transparent, \${BG}99)\` }} />
+              <div className="absolute inset-0" style={{ background: `linear-gradient(to right, transparent, ${BG}99)` }} />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <div className="grid grid-cols-2 gap-4">
                   {[
@@ -440,7 +440,7 @@ export default function HomePage() {
                     { value: '2', label: 'Provinces Covered' },
                     { value: '✓', label: 'Warranty Included' },
                   ].map((s) => (
-                    <div key={s.label} className="backdrop-blur-sm px-4 py-3 border-l-2" style={{ background: \`\${BG}b3\`, borderColor: GOLD }}>
+                    <div key={s.label} className="backdrop-blur-sm px-4 py-3 border-l-2" style={{ background: `${BG}b3`, borderColor: GOLD }}>
                       <p className="font-black text-2xl leading-none" style={{ color: GOLD }}>{s.value}</p>
                       <p className="text-white/50 text-[10px] uppercase tracking-wider mt-1">{s.label}</p>
                     </div>
@@ -459,7 +459,7 @@ export default function HomePage() {
               <div className="divide-y divide-white/[0.07]">
                 {whyReasons.map((item) => (
                   <div key={item.num} className="py-6 flex gap-5 group">
-                    <span className="font-black text-sm leading-none shrink-0 mt-0.5 w-6 transition-colors" style={{ color: \`\${GOLD}40\` }}>
+                    <span className="font-black text-sm leading-none shrink-0 mt-0.5 w-6 transition-colors" style={{ color: `${GOLD}40` }}>
                       {item.num}
                     </span>
                     <div>
@@ -517,7 +517,7 @@ export default function HomePage() {
                       <li key={area.slug}>
                         {isBuilt ? (
                           <Link
-                            href={\`/shadeport-\${area.slug}\`}
+                            href={`/shadeport-${area.slug}`}
                             className="flex items-center justify-between text-sm font-medium text-[#1a1a1a]/65 hover:text-[#1a1a1a] transition-colors group/item"
                           >
                             {area.name}
