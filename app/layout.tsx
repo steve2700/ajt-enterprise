@@ -12,32 +12,32 @@ import OrganizationSchema from '@/components/organization-schema'
 const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
-const BASE_URL = 'https://www.madimetsalogistics.co.za'
+const BASE_URL = 'https://www.ajtenterprise.co.za'
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: 'Madimetsa Logistics Gauteng | Freight Transport, Warehousing & Fleet Management',
-    template: '%s | Madimetsa Logistics',
+    default: 'AJT Enterprise | Shadeport & Carport Installation, Repairs & Maintenance',
+    template: '%s | AJT Enterprise',
   },
   description:
-    'Reliable freight transport, warehousing, fleet management and cross border logistics across South Africa. Based in Gauteng, serving Johannesburg, Pretoria, Durban, Cape Town and beyond. Call 072 308 9983.',
+    "Gauteng & Limpopo's trusted shadeport and carport specialists. New installations, repairs and maintenance for shadeports, cantilever shadeports, carports and parking bay cover. Call 065 867 7363.",
   keywords: [
-    'logistics company Gauteng',
-    'freight transport South Africa',
-    'warehousing and distribution Johannesburg',
-    'fleet management Gauteng',
-    'cross border logistics South Africa',
-    'express delivery Gauteng',
-    'supply chain solutions',
-    'freight forwarding South Africa',
-    'contract logistics Gauteng',
-    'transport company Johannesburg',
+    'shadeports Gauteng',
+    'shadeports Limpopo',
+    'shadeport installation South Africa',
+    'carport installation Gauteng',
+    'cantilever shadeports',
+    'shadeport repairs',
+    'shadeport maintenance',
+    'parking bay shadeports',
+    'carports South Africa',
+    'shadeport prices',
   ],
-  authors: [{ name: 'Madimetsa Logistics', url: BASE_URL }],
-  creator: 'Madimetsa Logistics',
-  publisher: 'Madimetsa Logistics',
+  authors: [{ name: 'AJT Enterprise', url: BASE_URL }],
+  creator: 'AJT Enterprise',
+  publisher: 'AJT Enterprise',
 
   // ── Favicons & icons ──────────────────────────────────────────────
   icons: {
@@ -60,17 +60,17 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_ZA',
     url: BASE_URL,
-    siteName: 'Madimetsa Logistics',
-    title: 'Madimetsa Logistics Gauteng | Freight Transport, Warehousing & Fleet Management',
+    siteName: 'AJT Enterprise',
+    title: 'AJT Enterprise | Shadeport & Carport Installation, Repairs & Maintenance',
     description:
-      'Reliable freight transport, warehousing, fleet management and cross border logistics across South Africa. Call 072 308 9983.',
+      "Gauteng & Limpopo's trusted shadeport and carport specialists. New installations, repairs and maintenance. Call 065 867 7363.",
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Madimetsa Logistics — freight transport and logistics across South Africa',
-        type: 'image/jpeg',
+        alt: 'AJT Enterprise — shadeports and carports across Gauteng & Limpopo',
+        type: 'image/png',
       },
     ],
   },
@@ -78,10 +78,10 @@ export const metadata: Metadata = {
   // ── Twitter / X ───────────────────────────────────────────────────
   twitter: {
     card: 'summary_large_image',
-    title: 'Madimetsa Logistics Gauteng | Freight Transport & Warehousing',
+    title: 'AJT Enterprise | Shadeport & Carport Specialists',
     description:
-      'Freight transport, warehousing, fleet management and cross border logistics across South Africa. Call 072 308 9983.',
-    images: ['/og-image.jpg'],
+      'New shadeport & carport installations, repairs and maintenance across Gauteng & Limpopo. Call 065 867 7363.',
+    images: ['/og-image.png'],
   },
 
   // ── Robots ────────────────────────────────────────────────────────
@@ -103,7 +103,7 @@ export const metadata: Metadata = {
   },
 
   // ── Misc ──────────────────────────────────────────────────────────
-  category: 'Logistics & Freight Transport',
+  category: 'Shadeports & Carports',
   formatDetection: {
     telephone: true,
     email: true,
@@ -112,7 +112,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#e8a33d',
+  themeColor: '#dcb068',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
