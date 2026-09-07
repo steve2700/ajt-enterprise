@@ -49,14 +49,14 @@ export const metadata: Metadata = {
 }
 
 const services = [
-  { href: '/shadeport-installation', label: 'Shadeport Installation', desc: 'New structures, built to spec', image: '/images/services/shadeport-installation.jpg' },
-  { href: '/cantilever-shadeports', label: 'Cantilever Shadeports', desc: 'No centre poles, clean sightlines', image: '/images/services/cantilever-shadeports.jpg' },
-  { href: '/carports', label: 'Carports', desc: 'Custom single & double shelters', image: '/images/services/carports.jpg' },
-  { href: '/carport-installation', label: 'Carport Installation', desc: 'Professional fitting at your property', image: '/images/services/carport-installation.jpg' },
-  { href: '/parking-bay-shadeports', label: 'Parking Bay Shadeports', desc: 'Commercial & residential cover', image: '/images/services/parking-bay-shadeports.jpg' },
-  { href: '/shadeport-repairs', label: 'Shadeport Repairs', desc: 'Frames, cladding & fittings fixed', image: '/images/services/shadeport-repairs.jpg' },
-  { href: '/shadeport-maintenance', label: 'Shadeport Maintenance', desc: 'Scheduled servicing & inspections', image: '/images/services/shadeport-maintenance.jpg' },
-  { href: '/shadeport-recovering', label: 'Shadeport Re-Covering', desc: 'Fabric & roof sheet replacement', image: '/images/services/shadeport-recovering.jpg' },
+  { href: '/shadeport-installation', label: 'Shadeport Installation', desc: 'New structures, built to spec', image: '/images/shadeport-installation.jpg' },
+  { href: '/cantilever-shadeports', label: 'Cantilever Shadeports', desc: 'No centre poles, clean sightlines', image: '/images/cantilever-shadeports.jpg' },
+  { href: '/carports', label: 'Carports', desc: 'Custom single & double shelters', image: '/images/carports.jpg' },
+  { href: '/carport-installation', label: 'Carport Installation', desc: 'Professional fitting at your property', image: '/images/carport-installation.jpg' },
+  { href: '/parking-bay-shadeports', label: 'Parking Bay Shadeports', desc: 'Commercial & residential cover', image: '/images/parking-bay-shadeports.jpg' },
+  { href: '/shadeport-repairs', label: 'Shadeport Repairs', desc: 'Frames, cladding & fittings fixed', image: '/images/shadeport-repairs.jpg' },
+  { href: '/shadeport-maintenance', label: 'Shadeport Maintenance', desc: 'Scheduled servicing & inspections', image: '/images/shadeport-maintenance.jpg' },
+  { href: '/shadeport-recovering', label: 'Shadeport Re-Covering', desc: 'Fabric & roof sheet replacement', image: '/images/shadeport-recovering.jpg' },
 ]
 
 // Gauteng & Limpopo coverage. Add a slug to builtAreaSlugs the moment its
