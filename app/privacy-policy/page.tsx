@@ -5,6 +5,7 @@ import { Breadcrumbs } from '@/components/breadcrumbs'
 const GOLD = '#dcb068'
 const GOLD_DARK = '#8a6535'
 const RED = '#b8161d'
+const RED_LIGHT = '#fc4d53'
 const BG = '#0d0705'
 const INK = '#1a1a1a'
 
@@ -18,15 +19,19 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | AJT Enterprise',
   description:
     'Privacy Policy for AJT Enterprise. Learn how we collect, use, store and protect personal information in accordance with South African privacy law and POPIA.',
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+  },
   alternates: {
     canonical: PRIVACY_URL,
   },
   openGraph: {
     title: 'Privacy Policy | AJT Enterprise',
     description:
-      'Learn how AJT Enterprise collects, uses, stores and protects personal information in accordance with POPIA.',
+      'Privacy Policy for AJT Enterprise covering the collection, use, storage and protection of personal information.',
     url: PRIVACY_URL,
+    siteName: 'AJT Enterprise',
     type: 'website',
     images: [
       {
@@ -41,489 +46,706 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    heading: '1. Who We Are',
-    body: `AJT Enterprise ("AJT Enterprise", "we", "us" or "our") is a South African business providing shadeport and carport installation, repair, maintenance and related services across our service areas.
-
-For purposes of the Protection of Personal Information Act, 4 of 2013 ("POPIA"), AJT Enterprise acts as the responsible party in relation to personal information that we collect and process in connection with our website, enquiries, quotations, site visits, installations, repairs, maintenance services and business operations.
-
-Our website is:
-
-${WEBSITE}
-
-Privacy enquiries may be directed to:
-
-Email: ${EMAIL}
-Telephone: ${PHONE_DISPLAY}`,
+    number: '01',
+    title: 'Who We Are',
+    content: (
+      <>
+        <p>
+          AJT Enterprise is a South African business providing shadeport and
+          carport solutions, including installation, repairs, maintenance and
+          related services.
+        </p>
+        <p>
+          This Privacy Policy explains how AJT Enterprise collects, uses,
+          stores, protects and handles personal information when you visit our
+          website, contact us, request a quotation or communicate with us about
+          our services.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '2. Our Commitment to Privacy',
-    body: `We respect the privacy of every person who interacts with AJT Enterprise.
-
-We are committed to processing personal information responsibly, lawfully and transparently. We collect information for specific business purposes, only use information where there is a lawful reason to do so, take reasonable steps to protect information in our possession and respect the rights available to individuals under applicable South African law.
-
-This Privacy Policy explains how we handle personal information when you visit our website, contact us, request a quotation, communicate with us, arrange a site visit or purchase our services.`,
+    number: '02',
+    title: 'Our Commitment to Privacy',
+    content: (
+      <>
+        <p>
+          AJT Enterprise respects the privacy of individuals and is committed
+          to handling personal information responsibly.
+        </p>
+        <p>
+          We aim to process personal information in accordance with applicable
+          South African privacy requirements, including the Protection of
+          Personal Information Act 4 of 2013, commonly known as POPIA.
+        </p>
+        <p>
+          We only seek to collect information that is reasonably necessary for
+          legitimate business purposes and for providing our services.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '3. Personal Information We May Collect',
-    body: `Depending on how you interact with us, we may collect information such as:
-
-Your name and surname
-
-Your telephone number
-
-Your email address
-
-Your business or organisation name
-
-Your service address or general location
-
-Information about the shadeport or carport you are enquiring about
-
-Information about the size, type or requirements of a proposed structure
-
-Information you provide in a message, enquiry, quotation request or other communication
-
-Information required to arrange a site visit or provide our services
-
-Records of communications between you and AJT Enterprise
-
-Information relating to a quotation, order, installation, repair or maintenance service
-
-Technical information relating to your interaction with our website, where such information is collected by the website or its hosting and security systems
-
-We aim to collect only information that is reasonably necessary for the purpose for which it is being collected.`,
+    number: '03',
+    title: 'Personal Information We May Collect',
+    content: (
+      <>
+        <p>
+          Depending on how you interact with AJT Enterprise, we may collect
+          information such as your name, telephone number, email address,
+          location, service requirements and information you provide when
+          describing a shadeport or carport project.
+        </p>
+        <p>
+          We may also receive information contained in messages, quotation
+          requests, correspondence or other communications that you choose to
+          send to us.
+        </p>
+        <p>
+          We do not intentionally request personal information that is not
+          reasonably required for the purpose for which it is collected.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '4. Information You Provide to Us',
-    body: `You may provide personal information to us when you:
-
-Complete a quotation or contact form
-
-Telephone us
-
-Send us an email
-
-Contact us through WhatsApp
-
-Request a site visit
-
-Request a quotation
-
-Ask about our services
-
-Arrange an installation, repair or maintenance service
-
-Communicate with us about an existing or proposed project
-
-We use the information you provide to understand your requirements, respond to your enquiry and provide the service you have requested.`,
+    number: '04',
+    title: 'Information You Provide to Us',
+    content: (
+      <>
+        <p>
+          When you submit an enquiry through our website or contact AJT
+          Enterprise directly, you may voluntarily provide information such as
+          your name, phone number, email address, location and details about
+          the work you require.
+        </p>
+        <p>
+          You are responsible for ensuring that information you provide to us
+          is accurate and that you have the right to provide any information
+          relating to another person.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '5. How We Use Personal Information',
-    body: `We may process your personal information for the following purposes:
+    number: '05',
+    title: 'How We Use Personal Information',
+    content: (
+      <>
+        <p>AJT Enterprise may use personal information to:</p>
 
-To respond to enquiries
-
-To provide quotations
-
-To arrange site visits
-
-To assess installation requirements
-
-To communicate with you about your project
-
-To provide shadeport and carport installation services
-
-To provide repair and maintenance services
-
-To manage customer relationships
-
-To process payments and maintain business records
-
-To communicate with you regarding an existing service or project
-
-To resolve complaints or service issues
-
-To maintain appropriate business and accounting records
-
-To protect our website, systems, business and customers against fraud, abuse or security threats
-
-To comply with legal and regulatory obligations
-
-To improve our services and website where this can be done lawfully
-
-We do not sell your personal information to third parties.`,
+        <ul className="space-y-3">
+          <li>Respond to enquiries and requests for information.</li>
+          <li>Prepare and provide quotations.</li>
+          <li>Understand your shadeport or carport requirements.</li>
+          <li>Arrange consultations, measurements or site related discussions.</li>
+          <li>Provide requested services.</li>
+          <li>Communicate with you about your enquiry or project.</li>
+          <li>Maintain appropriate business records.</li>
+          <li>Improve our website, services and customer experience.</li>
+          <li>Protect our website, business and users against misuse or security threats.</li>
+          <li>Meet legal or regulatory obligations where applicable.</li>
+        </ul>
+      </>
+    ),
   },
-
   {
-    heading: '6. Lawful Processing Under POPIA',
-    body: `We process personal information in accordance with the conditions for lawful processing set out in POPIA.
-
-Depending on the circumstances, the lawful basis for processing may include:
-
-Your consent
-
-The need to take steps at your request before entering into a contract
-
-The performance of a contract or service you have requested
-
-Compliance with a legal obligation
-
-Our legitimate business interests, where those interests are lawful and do not unfairly prejudice your rights
-
-Where we rely on consent, you may withdraw that consent at any time. Withdrawal of consent does not affect the lawfulness of processing that took place before the withdrawal.
-
-Where information is necessary for us to provide a requested service, refusing to provide that information may mean that we are unable to provide the relevant service or respond fully to your enquiry.`,
+    number: '06',
+    title: 'Lawful Processing Under POPIA',
+    content: (
+      <>
+        <p>
+          Personal information is processed for specific and legitimate
+          purposes connected with our business activities.
+        </p>
+        <p>
+          Depending on the circumstances, processing may be based on your
+          consent, the performance of a service or agreement, a legitimate
+          business purpose, compliance with a legal obligation or another
+          lawful basis recognised under applicable law.
+        </p>
+        <p>
+          We aim to apply appropriate principles of accountability, purpose
+          limitation, information quality, openness, security and data subject
+          participation when processing personal information.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '7. Direct Marketing',
-    body: `We respect your right to control how your personal information is used for direct marketing.
-
-Where applicable law requires consent for direct electronic marketing, we will obtain the required consent before sending such communications.
-
-You may object to receiving direct marketing communications from us at any time.
-
-If you no longer wish to receive marketing communications, you may contact us using the details provided in this policy.
-
-We do not sell customer information to marketing databases or unrelated third parties.`,
+    number: '07',
+    title: 'Direct Marketing',
+    content: (
+      <>
+        <p>
+          AJT Enterprise may communicate with existing or prospective customers
+          about our services where permitted by applicable law.
+        </p>
+        <p>
+          Where consent is required for direct electronic marketing, we will
+          seek that consent before sending the relevant marketing
+          communications.
+        </p>
+        <p>
+          You may request that we stop sending marketing communications to you.
+          We will take reasonable steps to respect such requests.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '8. Sharing Personal Information',
-    body: `We do not sell or rent personal information.
-
-We may share personal information where reasonably necessary to provide our services, operate our business, comply with the law or protect our legitimate interests.
-
-Depending on the circumstances, information may be shared with service providers or professional advisers who assist us with matters such as website hosting, information technology, payment processing, accounting, legal services, business administration or other operational requirements.
-
-Where we use another organisation to process personal information on our behalf, we take reasonable steps to ensure that the information is handled appropriately and protected against unauthorised access or disclosure.
-
-We may also disclose information where required by law, a court order, a lawful regulatory request or where disclosure is necessary to protect the rights, property or safety of AJT Enterprise, our customers or another person.`,
+    number: '08',
+    title: 'Sharing Personal Information',
+    content: (
+      <>
+        <p>
+          AJT Enterprise does not sell your personal information.
+        </p>
+        <p>
+          We may disclose personal information where reasonably necessary to
+          provide a service, operate our business, respond to your request,
+          comply with a legal obligation, protect our rights or protect the
+          security of our website and users.
+        </p>
+        <p>
+          Where external service providers process information on our behalf,
+          we aim to use appropriate providers and take reasonable steps to
+          ensure that personal information is handled appropriately.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '9. Information Security',
-    body: `We take reasonable technical and organisational measures to protect personal information against loss, damage, unauthorised access, unauthorised disclosure, alteration and destruction.
-
-These measures may include appropriate access controls, secure systems, restricted access to information, password protection, security monitoring and appropriate operational procedures.
-
-No electronic transmission or storage system can be guaranteed to be completely secure. While we take reasonable steps to protect information, we cannot guarantee absolute security.
-
-If we become aware of a security compromise involving personal information, we will take appropriate steps to investigate and respond to the incident in accordance with applicable law.`,
+    number: '09',
+    title: 'Information Security',
+    content: (
+      <>
+        <p>
+          AJT Enterprise takes reasonable steps to protect personal information
+          against unauthorised access, loss, misuse, alteration, disclosure or
+          destruction.
+        </p>
+        <p>
+          Security measures may include appropriate technical and organisational
+          safeguards, access controls and secure handling procedures.
+        </p>
+        <p>
+          No website, electronic communication system or method of storing
+          information can be guaranteed to be completely secure. We therefore
+          encourage you to take reasonable care when sending personal
+          information online.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '10. How Long We Keep Personal Information',
-    body: `We retain personal information only for as long as reasonably necessary for the purpose for which it was collected, to provide our services, to maintain appropriate business records, to resolve disputes, to comply with legal obligations or for another lawful purpose.
-
-Different types of information may need to be retained for different periods.
-
-When personal information is no longer required and there is no lawful reason to retain it, we will take reasonable steps to securely delete, destroy or anonymise it.`,
+    number: '10',
+    title: 'How Long We Keep Personal Information',
+    content: (
+      <>
+        <p>
+          We retain personal information only for as long as reasonably
+          necessary for the purposes for which it was collected, to provide
+          services, maintain appropriate business records, resolve disputes,
+          comply with legal obligations or protect our legitimate interests.
+        </p>
+        <p>
+          When information is no longer reasonably required, we aim to securely
+          delete, destroy or anonymise it where appropriate.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '11. Website Forms and Enquiries',
-    body: `When you submit information through a form on our website, the information may be used to respond to your enquiry, prepare a quotation, arrange a site visit or otherwise provide the service you have requested.
-
-Information submitted through our website should be accurate and should not include unnecessary sensitive personal information.
-
-Please do not submit identity documents, passwords, payment card information, medical information or other sensitive information through a general contact or quotation form unless we specifically request it through an appropriate and secure process.`,
+    number: '11',
+    title: 'Website Forms and Enquiries',
+    content: (
+      <>
+        <p>
+          Information submitted through forms on the AJT Enterprise website is
+          used to respond to the enquiry and understand the requested service.
+        </p>
+        <p>
+          Depending on the form, this may include your name, telephone number,
+          email address, location, requested service and project details.
+        </p>
+        <p>
+          Please do not submit confidential information that is not necessary
+          for your enquiry.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '12. Cookies and Website Technologies',
-    body: `Our website may use cookies or similar technologies that are necessary for the website to operate correctly, maintain security, remember certain preferences or understand how the website is being used.
-
-Where optional analytics, advertising or other tracking technologies are introduced, we will take appropriate steps to provide information about their use and obtain consent where required by applicable law.
-
-You can control cookies through your browser settings. Disabling certain cookies may affect some website functionality.
-
-We do not use cookies as a means of selling your personal information.`,
+    number: '12',
+    title: 'Cookies and Website Technologies',
+    content: (
+      <>
+        <p>
+          Our website may use cookies or similar technologies where required
+          for website functionality, security, performance, preferences or
+          other legitimate website purposes.
+        </p>
+        <p>
+          Some technologies may collect limited technical information such as
+          browser type, device information, approximate usage information or
+          pages visited.
+        </p>
+        <p>
+          If we introduce additional analytics, advertising or tracking
+          technologies that materially affect how personal information is
+          processed, this Privacy Policy may be updated to reflect that
+          processing.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '13. Third Party Websites and Services',
-    body: `Our website may contain links to third party websites or services, including communication platforms and social media platforms.
-
-If you follow a link to another website or communicate with us through a third party platform, that platform may process your information according to its own privacy policy and terms.
-
-AJT Enterprise is not responsible for the privacy practices, security or content of third party websites or platforms.
-
-We recommend reviewing the privacy policy of any third party service before providing personal information to that service.`,
+    number: '13',
+    title: 'Third Party Websites and Services',
+    content: (
+      <>
+        <p>
+          Our website may contain links to websites or services operated by
+          third parties.
+        </p>
+        <p>
+          AJT Enterprise is not responsible for the privacy practices,
+          security or content of third party websites. We recommend reviewing
+          the privacy policy of any external website before providing personal
+          information.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '14. Children',
-    body: `Our services and website are intended for general business and consumer use and are not directed specifically at children.
-
-We do not knowingly collect personal information from children for purposes unrelated to our lawful business activities.
-
-If you believe that a child has provided personal information to us without appropriate consent or lawful authority, please contact us so that we can investigate and take appropriate action.`,
+    number: '14',
+    title: 'Children',
+    content: (
+      <>
+        <p>
+          Our services and website are intended for general customers and
+          businesses. We do not intentionally seek to collect personal
+          information from children where such collection is not permitted by
+          applicable law.
+        </p>
+        <p>
+          If you believe that a child has provided personal information to us
+          without appropriate permission, please contact us so that we can
+          consider the appropriate action.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '15. Your Rights Under POPIA',
-    body: `Subject to the conditions and limitations provided by law, you may have the right to:
+    number: '15',
+    title: 'Your Rights Under POPIA',
+    content: (
+      <>
+        <p>
+          Subject to applicable law and any lawful limitations, you may have
+          rights relating to your personal information, including the right to:
+        </p>
 
-Request access to personal information that we hold about you
+        <ul className="space-y-3">
+          <li>Request confirmation that we hold personal information about you.</li>
+          <li>Request access to personal information we hold about you.</li>
+          <li>Request correction or updating of inaccurate or incomplete information.</li>
+          <li>Request deletion of information where there is a lawful basis for doing so.</li>
+          <li>Object to certain forms of processing where permitted by law.</li>
+          <li>Object to direct marketing communications.</li>
+          <li>Withdraw consent where processing is based on consent, subject to applicable limitations.</li>
+          <li>Complain to the Information Regulator where you believe your rights have been infringed.</li>
+        </ul>
 
-Request correction of inaccurate, incomplete or outdated personal information
-
-Request deletion of personal information where there is a lawful basis for deletion
-
-Object to the processing of your personal information in circumstances permitted by law
-
-Object to the use of your personal information for direct marketing
-
-Withdraw consent where processing is based on consent
-
-Request information about how your personal information is being processed
-
-Lodge a complaint with the Information Regulator where you believe your personal information has been handled unlawfully
-
-Some rights are subject to legal exceptions. For example, we may be required to retain certain information to comply with a legal obligation or to establish, exercise or defend a legal claim.`,
+        <p>
+          These rights are subject to applicable legal requirements and may not
+          apply in every circumstance.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '16. How to Exercise Your Rights',
-    body: `To request access, correction, deletion or another privacy related action, contact AJT Enterprise using the details below.
-
-Email: ${EMAIL}
-
-Telephone: ${PHONE_DISPLAY}
-
-Please provide enough information for us to understand your request and verify your identity where reasonably necessary.
-
-We will consider your request and respond within the period required by applicable law.
-
-We may need to request additional information where reasonably necessary to verify the identity of the person making the request and to protect personal information against unauthorised disclosure.`,
+    number: '16',
+    title: 'How to Exercise Your Rights',
+    content: (
+      <>
+        <p>
+          To make a privacy request or ask a question about your personal
+          information, contact AJT Enterprise using the contact details provided
+          at the end of this Privacy Policy.
+        </p>
+        <p>
+          To help us deal with your request efficiently, please provide enough
+          information for us to understand your request and identify the
+          relevant information or interaction.
+        </p>
+        <p>
+          We may need to verify your identity before providing access to
+          personal information or making certain changes.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '17. Accuracy of Personal Information',
-    body: `We take reasonable steps to keep personal information in our possession accurate, complete and up to date where necessary for the purpose for which it is processed.
-
-You can help us by notifying us if your personal information changes or if you believe information we hold about you is incorrect.
-
-Where appropriate, we will correct or update information after receiving a valid request.`,
+    number: '17',
+    title: 'Accuracy of Personal Information',
+    content: (
+      <>
+        <p>
+          We aim to keep personal information reasonably accurate, complete and
+          up to date for the purposes for which it is used.
+        </p>
+        <p>
+          If your information changes or you believe that information we hold
+          about you is inaccurate, please contact us so that we can consider
+          the appropriate correction.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '18. International Transfers',
-    body: `Some technology, hosting or service providers used in connection with our website or business operations may process information outside South Africa.
-
-Where personal information is transferred outside South Africa, we will take reasonable steps to ensure that the transfer is handled in accordance with applicable legal requirements, including the requirements of POPIA relating to cross border transfers.
-
-We will not knowingly transfer personal information internationally in a manner that unlawfully reduces the protection available to the information.`,
+    number: '18',
+    title: 'International Transfers',
+    content: (
+      <>
+        <p>
+          Some technical service providers used by modern websites may process
+          information outside South Africa.
+        </p>
+        <p>
+          If AJT Enterprise uses a service that involves transferring personal
+          information outside South Africa, we aim to ensure that the transfer
+          is handled in accordance with applicable legal requirements and
+          appropriate safeguards.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '19. Security Compromises',
-    body: `If we reasonably suspect that personal information in our possession has been accessed or acquired by an unauthorised person, we will assess the incident and take appropriate steps required by applicable law.
-
-Where POPIA requires notification of a security compromise, we will notify the Information Regulator and affected data subjects in accordance with the applicable requirements.
-
-We encourage customers to contact us promptly if they believe that information submitted to AJT Enterprise has been compromised.`,
+    number: '19',
+    title: 'Security Compromises',
+    content: (
+      <>
+        <p>
+          If AJT Enterprise becomes aware of a security compromise involving
+          personal information and applicable law requires notification, we will
+          take reasonable steps to investigate the incident and follow the
+          applicable notification requirements.
+        </p>
+        <p>
+          Where required, affected individuals and the appropriate regulatory
+          authority may be notified in accordance with applicable law.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '20. Complaints',
-    body: `If you have a concern about how we process your personal information, we encourage you to contact us first so that we can investigate and attempt to resolve the matter.
+    number: '20',
+    title: 'Complaints',
+    content: (
+      <>
+        <p>
+          If you have a concern about how AJT Enterprise handles your personal
+          information, we encourage you to contact us first so that we have an
+          opportunity to investigate and address your concern.
+        </p>
+        <p>
+          You may also have the right to lodge a complaint with the South
+          African Information Regulator.
+        </p>
 
-You may also lodge a complaint with the Information Regulator of South Africa where you believe that your personal information has been processed unlawfully.
-
-The Information Regulator is an independent authority responsible for monitoring and enforcing compliance with POPIA.
-
-Information Regulator of South Africa
-
-Website: https://inforegulator.org.za
-
-Telephone: 010 023 5200
-
-Email: enquiries@inforegulator.org.za`,
+        <div className="mt-6 rounded-sm border border-black/[0.08] bg-black/[0.025] p-5">
+          <p className="font-semibold text-black">
+            Information Regulator
+          </p>
+          <p className="mt-2 text-sm leading-7 text-black/65">
+            South Africa
+          </p>
+          <p className="text-sm leading-7 text-black/65">
+            Telephone: 010 023 5200
+          </p>
+          <p className="text-sm leading-7 text-black/65">
+            Email: enquiries@inforegulator.org.za
+          </p>
+        </div>
+      </>
+    ),
   },
-
   {
-    heading: '21. Changes to This Privacy Policy',
-    body: `We may update this Privacy Policy from time to time to reflect changes in our business, website, services, technology or applicable legal requirements.
-
-When we make changes, the updated version will be published on this page together with the date on which it was last updated.
-
-We encourage you to review this page periodically so that you remain informed about how AJT Enterprise handles personal information.`,
+    number: '21',
+    title: 'Changes to This Privacy Policy',
+    content: (
+      <>
+        <p>
+          AJT Enterprise may update this Privacy Policy from time to time to
+          reflect changes to our services, website, technology, business
+          practices or applicable legal requirements.
+        </p>
+        <p>
+          When we make changes, the updated version will be published on this
+          page with the revised effective date where appropriate.
+        </p>
+        <p>
+          We encourage visitors to review this page periodically to remain
+          informed about how personal information is handled.
+        </p>
+      </>
+    ),
   },
-
   {
-    heading: '22. Contact AJT Enterprise About Privacy',
-    body: `If you have a question, request or concern about this Privacy Policy or the way AJT Enterprise handles personal information, please contact us.
+    number: '22',
+    title: 'Contact AJT Enterprise About Privacy',
+    content: (
+      <>
+        <p>
+          If you have a question about this Privacy Policy, want to exercise a
+          privacy right or need to contact AJT Enterprise about personal
+          information, please use the contact details below.
+        </p>
 
-AJT Enterprise
-
-Email: ${EMAIL}
-
-Telephone: ${PHONE_DISPLAY}
-
-Website: ${WEBSITE}`,
-  },
-]
-
-export default function PrivacyPolicyPage() {
-  return (
-    <>
-      {/* Breadcrumb */}
-      <div
-        style={{ background: '#f5f4f0' }}
-        className="border-b border-black/[0.08]"
-      >
-        <div className="max-w-6xl mx-auto px-6">
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Privacy Policy' },
-            ]}
+        <div className="mt-6 overflow-hidden rounded-sm border border-black/[0.08] bg-white">
+          <div
+            className="h-1"
+            style={{
+              background: `linear-gradient(90deg, ${GOLD}, ${RED})`,
+            }}
           />
-        </div>
-      </div>
 
-      {/* Hero */}
-      <section
-        style={{ background: BG }}
-        className="border-b"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-          <p
-            className="text-xs font-bold tracking-[0.35em] uppercase mb-4"
-            style={{ color: GOLD }}
-          >
-            Legal
-          </p>
-
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">
-            Privacy Policy
-          </h1>
-
-          <p className="text-white/50 text-sm">
-            Last updated: September 2026 · AJT Enterprise
-          </p>
-        </div>
-      </section>
-
-      {/* Introduction */}
-      <section className="py-14 md:py-20 bg-[#f5f4f0]">
-        <div className="max-w-3xl mx-auto px-6">
-
-          <div className="bg-white border border-black/[0.08] p-6 md:p-8 mb-10">
-            <div
-              className="w-8 h-0.5 mb-5"
-              style={{ background: GOLD }}
-            />
-
-            <p className="text-[#1a1a1a]/75 text-base leading-relaxed">
-              At AJT Enterprise, we respect your privacy and are committed to
-              protecting the personal information you share with us. This Privacy
-              Policy explains how we collect, use, store and protect personal
-              information when you visit our website, contact us, request a
-              quotation or use our shadeport and carport services.
+          <div className="p-6 sm:p-8">
+            <p className="text-xl font-bold text-black">
+              AJT Enterprise
             </p>
 
-            <p className="text-[#1a1a1a]/75 text-base leading-relaxed mt-5">
-              This policy is intended to explain our privacy practices in a clear
-              and practical way and to describe the rights available to you under
-              applicable South African privacy law, including the Protection of
-              Personal Information Act, 4 of 2013.
-            </p>
-          </div>
-
-          {/* Policy sections */}
-          <div className="space-y-10">
-            {sections.map((section) => (
-              <article key={section.heading}>
-                <h2 className="text-lg md:text-xl font-bold text-[#1a1a1a] mb-3">
-                  {section.heading}
-                </h2>
-
-                <div
-                  className="w-8 h-0.5 mb-4"
-                  style={{ background: GOLD }}
-                />
-
-                <p className="text-[#1a1a1a]/65 text-sm md:text-base leading-relaxed whitespace-pre-line">
-                  {section.body}
-                </p>
-              </article>
-            ))}
-          </div>
-
-          {/* Contact box */}
-          <div className="mt-14 p-6 md:p-8 bg-white border border-black/[0.08]">
-            <div
-              className="w-8 h-0.5 mb-4"
-              style={{ background: GOLD }}
-            />
-
-            <h2 className="font-bold text-[#1a1a1a] text-lg mb-2">
-              Questions about your privacy?
-            </h2>
-
-            <p className="text-sm text-[#1a1a1a]/60 mb-6 leading-relaxed">
-              If you have a question about this Privacy Policy or want to
-              exercise a privacy right, contact AJT Enterprise directly.
+            <p className="mt-2 text-sm leading-7 text-black/65">
+              Shadeports and carports
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <a
                 href={`tel:${PHONE_TEL}`}
+                className="inline-flex items-center justify-center gap-2 rounded-sm px-5 py-3 text-sm font-semibold text-white transition-all hover:brightness-110"
                 style={{
-                  background: `linear-gradient(135deg, ${RED_LIGHT_FIX}, ${RED})`,
+                  background: `linear-gradient(135deg, ${RED_LIGHT}, ${RED})`,
                 }}
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 text-white font-semibold text-sm hover:brightness-110 transition-all rounded-sm"
               >
                 Call {PHONE_DISPLAY}
               </a>
 
               <a
                 href={`mailto:${EMAIL}`}
-                className="inline-flex items-center justify-center px-5 py-3 border border-black/[0.15] text-[#1a1a1a] font-semibold text-sm hover:border-[#dcb068] hover:text-[#8a6535] transition-colors rounded-sm"
+                className="inline-flex items-center justify-center gap-2 rounded-sm border px-5 py-3 text-sm font-semibold transition-all hover:bg-black/[0.025]"
+                style={{
+                  borderColor: GOLD_DARK,
+                  color: GOLD_DARK,
+                }}
+              >
+                Email AJT Enterprise
+              </a>
+            </div>
+
+            <p className="mt-5 text-xs leading-6 text-black/50">
+              Email: {EMAIL}
+            </p>
+
+            <p className="text-xs leading-6 text-black/50">
+              Website: {WEBSITE}
+            </p>
+          </div>
+        </div>
+      </>
+    ),
+  },
+]
+
+export default function PrivacyPolicyPage() {
+  return (
+    <main className="min-h-screen bg-white text-black">
+      <section
+        className="relative overflow-hidden"
+        style={{ backgroundColor: BG }}
+      >
+        <div className="absolute inset-0 opacity-30">
+          <div
+            className="absolute -right-24 -top-24 h-72 w-72 rounded-full blur-3xl"
+            style={{ backgroundColor: RED }}
+          />
+
+          <div
+            className="absolute -bottom-32 -left-24 h-72 w-72 rounded-full blur-3xl"
+            style={{ backgroundColor: GOLD_DARK }}
+          />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+          <div className="mb-8">
+            <Breadcrumbs
+              items={[
+                { label: 'Home', href: '/' },
+                { label: 'Privacy Policy' },
+              ]}
+            />
+          </div>
+
+          <div className="max-w-3xl">
+            <p
+              className="text-xs font-bold uppercase tracking-[0.28em]"
+              style={{ color: GOLD }}
+            >
+              AJT Enterprise
+            </p>
+
+            <h1 className="mt-4 text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Privacy Policy
+            </h1>
+
+            <p className="mt-6 max-w-2xl text-base leading-8 text-white/65 sm:text-lg">
+              How AJT Enterprise collects, uses, stores and protects personal
+              information when you use our website or communicate with us.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/45">
+              <span>AJT Enterprise</span>
+              <span>Last updated: 8 September 2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-black/[0.08] bg-[#faf9f7]">
+        <div className="mx-auto max-w-6xl px-5 py-5 sm:px-8">
+          <p className="text-sm leading-7 text-black/60">
+            Please read this Privacy Policy carefully to understand how AJT
+            Enterprise handles personal information.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-5 py-12 sm:px-8 sm:py-16">
+        <div className="space-y-14">
+          {sections.map((section) => (
+            <article
+              key={section.number}
+              className="relative border-b border-black/[0.08] pb-14 last:border-b-0"
+            >
+              <div className="grid gap-6 sm:grid-cols-[72px_1fr]">
+                <div>
+                  <span
+                    className="text-xs font-black tracking-[0.2em]"
+                    style={{ color: RED }}
+                  >
+                    {section.number}
+                  </span>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-bold tracking-tight text-black sm:text-3xl">
+                    {section.title}
+                  </h2>
+
+                  <div className="mt-5 space-y-5 text-[15px] leading-8 text-black/68">
+                    {section.content}
+                  </div>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section
+        className="border-t"
+        style={{
+          borderColor: 'rgba(0,0,0,0.08)',
+          backgroundColor: '#faf9f7',
+        }}
+      >
+        <div className="mx-auto max-w-4xl px-5 py-12 sm:px-8">
+          <div
+            className="rounded-sm p-6 sm:p-8"
+            style={{
+              backgroundColor: BG,
+            }}
+          >
+            <p
+              className="text-xs font-bold uppercase tracking-[0.25em]"
+              style={{ color: GOLD }}
+            >
+              AJT Enterprise
+            </p>
+
+            <h2 className="mt-3 text-2xl font-bold text-white">
+              Questions about your privacy?
+            </h2>
+
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-white/60">
+              Contact AJT Enterprise if you have a question about this Privacy
+              Policy or how we handle personal information.
+            </p>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={`mailto:${EMAIL}`}
+                className="inline-flex items-center justify-center rounded-sm px-5 py-3 text-sm font-semibold text-black transition-all hover:brightness-110"
+                style={{
+                  backgroundColor: GOLD,
+                }}
               >
                 {EMAIL}
+              </a>
+
+              <a
+                href={`tel:${PHONE_TEL}`}
+                className="inline-flex items-center justify-center rounded-sm border px-5 py-3 text-sm font-semibold text-white transition-all hover:bg-white/5"
+                style={{
+                  borderColor: RED_LIGHT,
+                }}
+              >
+                {PHONE_DISPLAY}
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer links */}
-      <section className="py-10 bg-white border-t border-black/[0.08]">
-        <div className="max-w-3xl mx-auto px-6">
-          <div className="flex flex-col sm:flex-row gap-4 text-sm">
+      <footer className="border-t border-black/[0.08] bg-white">
+        <div className="mx-auto flex max-w-6xl flex-col gap-5 px-5 py-8 sm:px-8 md:flex-row md:items-center md:justify-between">
+          <p className="text-xs leading-6 text-black/45">
+            © {new Date().getFullYear()} AJT Enterprise. All rights reserved.
+          </p>
+
+          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold">
+            <Link
+              href="/"
+              className="text-black/55 transition-colors hover:text-black"
+            >
+              Home
+            </Link>
+
             <Link
               href="/terms"
-              className="text-[#1a1a1a]/50 hover:text-[#8a6535] transition-colors"
+              className="text-black/55 transition-colors hover:text-black"
             >
-              Terms &amp; Conditions
+              Terms
+            </Link>
+
+            <Link
+              href="/privacy-policy"
+              className="transition-colors"
+              style={{ color: RED }}
+            >
+              Privacy Policy
             </Link>
 
             <Link
               href="/contact"
-              className="text-[#1a1a1a]/50 hover:text-[#8a6535] transition-colors"
+              className="text-black/55 transition-colors hover:text-black"
             >
-              Contact Us
+              Contact
             </Link>
-
-            <Link
-              href="/"
-              className="text-[#1a1a1a]/50 hover:text-[#8a6535] transition-colors"
-            >
-              Back to Home
-            </Link>
-          </div>
+          </nav>
         </div>
-      </section>
-
-      <div className="h-14 md:hidden" aria-hidden="true" />
-    </>
+      </footer>
+    </main>
   )
 }
