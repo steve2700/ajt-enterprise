@@ -54,7 +54,7 @@ export default function SiteFooter() {
 
       {/* ── Main grid ── */}
       <div className="max-w-6xl mx-auto px-6 py-12 md:py-14">
-        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[1.4fr_0.9fr_1.3fr]">
 
           {/* Brand column */}
           <div>
@@ -176,20 +176,34 @@ export default function SiteFooter() {
               Areas We Serve
               <span className="flex-1 h-px" style={{ background: `${GOLD}33` }} />
             </h3>
-            <ul className="flex flex-col">
-              {areas.map((area) => (
-                <li key={area.name}>
-                  <Link
-                    href={`/shadeport-${area.slug}`}
-                    className="group flex items-center gap-2 py-[7px] border-b border-white/[0.04] transition-colors hover:text-white text-white/50 text-[12.5px]"
-                  >
-                    <span className="w-1 h-1 shrink-0 transition-colors" style={{ background: `${GOLD}4d` }} />
-                    {area.name}
-                    <span className="text-white/25 text-[10px]">· {area.region}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="grid grid-cols-2 gap-x-4">
+              <ul className="flex flex-col">
+                {areas.slice(0, 7).map((area) => (
+                  <li key={area.name}>
+                    <Link
+                      href={`/shadeport-${area.slug}`}
+                      className="group flex items-center gap-2 py-[7px] border-b border-white/[0.04] transition-colors hover:text-white text-white/50 text-[12.5px]"
+                    >
+                      <span className="w-1 h-1 shrink-0 transition-colors" style={{ background: `${GOLD}4d` }} />
+                      {area.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex flex-col">
+                {areas.slice(7).map((area) => (
+                  <li key={area.name}>
+                    <Link
+                      href={`/shadeport-${area.slug}`}
+                      className="group flex items-center gap-2 py-[7px] border-b border-white/[0.04] transition-colors hover:text-white text-white/50 text-[12.5px]"
+                    >
+                      <span className="w-1 h-1 shrink-0 transition-colors" style={{ background: `${GOLD}4d` }} />
+                      {area.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <Link
               href="/contact"
               style={{ color: GOLD }}
