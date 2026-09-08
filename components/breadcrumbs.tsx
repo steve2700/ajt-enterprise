@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const BASE_URL = 'https://www.madimetsalogistics.co.za'
+const BASE_URL = 'https://www.ajtenterprise.co.za'
 
 interface BreadcrumbItem {
   label: string
@@ -58,7 +58,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
                 {item.href && !isLast ? (
                   <Link
                     href={item.href}
-                    className="text-[#1a1a1a]/50 hover:text-[#e8a33d] transition-colors"
+                    className="text-[#1a1a1a]/50 hover:text-[#8a6535] transition-colors"
                     itemProp="item"
                   >
                     <span itemProp="name">{item.label}</span>
