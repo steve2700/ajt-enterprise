@@ -117,8 +117,19 @@ const structureTypes = [
 ]
 
 const areas = [
-  'Johannesburg', 'Pretoria', 'Sandton', 'Centurion', 'Midrand', 'Randburg', 'Roodepoort', 'Vereeniging',
-  'Polokwane', 'Tzaneen', 'Mokopane', 'Thohoyandou', 'Lephalale', 'Bela-Bela',
+  { name: 'Johannesburg', slug: 'johannesburg' }, { name: 'Pretoria', slug: 'pretoria' },
+  { name: 'Sandton', slug: 'sandton' }, { name: 'Centurion', slug: 'centurion' },
+  { name: 'Midrand', slug: 'midrand' }, { name: 'Randburg', slug: 'randburg' },
+  { name: 'Roodepoort', slug: 'roodepoort' }, { name: 'Vereeniging', slug: 'vereeniging' },
+  { name: 'Polokwane', slug: 'polokwane' }, { name: 'Tzaneen', slug: 'tzaneen' },
+  { name: 'Mokopane', slug: 'mokopane' }, { name: 'Thohoyandou', slug: 'thohoyandou' },
+  { name: 'Lephalale', slug: 'lephalale' }, { name: 'Bela-Bela', slug: 'bela-bela' },
+]
+
+const relatedServices = [
+  { href: '/cantilever-shadeports', label: 'Cantilever Shadeports', desc: 'No centre poles, clean sightlines' },
+  { href: '/carports', label: 'Carports', desc: 'Custom single & double shelters' },
+  { href: '/parking-bay-shadeports', label: 'Parking Bay Shadeports', desc: 'Commercial & residential cover' },
 ]
 
 const serviceSchema = {
@@ -394,11 +405,44 @@ export default function ShadeportInstallationPage() {
           </h2>
           <ul className="flex flex-wrap gap-2.5">
             {areas.map((area) => (
-              <li key={area} className="px-4 py-2 rounded-full border border-[#1a1a1a]/10 text-sm text-[#1a1a1a]/70 bg-[#f5f4f0]">
-                {area}
+              <li key={area.slug}>
+                <Link
+                  href={`/shadeport-${area.slug}`}
+                  className="inline-block px-4 py-2 rounded-full border border-[#1a1a1a]/10 text-sm text-[#1a1a1a]/70 bg-[#f5f4f0] hover:border-[#dcb068]/60 hover:text-[#8a6535] transition-colors"
+                >
+                  {area.name}
+                </Link>
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* ═══════════════ RELATED SERVICES ═══════════════ */}
+      <section className="py-16 md:py-20" style={{ background: '#f5f4f0' }} aria-labelledby="related-heading">
+        <div className="max-w-6xl mx-auto px-6">
+          <p className="text-[11px] font-bold tracking-[0.35em] uppercase mb-3" style={{ color: GOLD_DARK }}>Also Consider</p>
+          <h2 id="related-heading" className="text-2xl md:text-3xl font-black leading-tight mb-8 max-w-xl" style={{ color: INK }}>
+            Related Services
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-5">
+            {relatedServices.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="group p-6 rounded-xl bg-white border border-[#1a1a1a]/[0.08] hover:shadow-lg transition-shadow flex flex-col"
+              >
+                <h3 className="font-bold text-base mb-1" style={{ color: INK }}>{s.label}</h3>
+                <p className="text-[#1a1a1a]/50 text-sm leading-relaxed mb-4">{s.desc}</p>
+                <span className="mt-auto inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide" style={{ color: GOLD_DARK }}>
+                  Learn more
+                  <svg width="10" height="10" viewBox="0 0 14 14" fill="none" className="transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                    <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
