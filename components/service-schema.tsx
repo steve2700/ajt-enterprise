@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.madimetsalogistics.co.za'
+const BASE_URL = 'https://www.ajtenterprise.co.za'
 const BUSINESS_ID = `${BASE_URL}/#business`
 
 interface ServiceSchemaProps {
@@ -13,7 +13,7 @@ export default function ServiceSchema({
   name,
   description,
   url,
-  serviceType = 'Logistics Service',
+  serviceType = 'Shadeport & Carport Service',
 }: ServiceSchemaProps) {
   if (!name?.trim() || !description?.trim() || !url?.trim()) return null
 
@@ -28,21 +28,20 @@ export default function ServiceSchema({
     provider: {
       '@type': 'LocalBusiness',
       '@id': BUSINESS_ID,
-      name: 'Madimetsa Logistics',
-      telephone: '+27723089983',
-      email: 'info@madimetsalogistics.co.za',
+      name: 'AJT Enterprise',
+      telephone: '+27658677363',
+      email: 'Info@ajtenterprise.co.za',
       url: BASE_URL,
     },
-    areaServed: {
-      '@type': 'Country',
-      name: 'South Africa',
-      sameAs: 'https://www.wikidata.org/wiki/Q258',
-    },
+    areaServed: [
+      { '@type': 'State', name: 'Gauteng' },
+      { '@type': 'State', name: 'Limpopo' },
+    ],
     availableChannel: {
       '@type': 'ServiceChannel',
       servicePhone: {
         '@type': 'ContactPoint',
-        telephone: '+27723089983',
+        telephone: '+27658677363',
         contactType: 'customer service',
         areaServed: 'ZA',
         availableLanguage: 'English',
