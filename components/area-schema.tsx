@@ -1,4 +1,4 @@
-const BASE_URL = 'https://www.madimetsalogistics.co.za'
+const BASE_URL = 'https://www.ajtenterprise.co.za'
 const BUSINESS_ID = `${BASE_URL}/#business`
 
 interface AreaSchemaProps {
@@ -6,20 +6,22 @@ interface AreaSchemaProps {
   url: string
   /** Optional: list of specific suburbs/neighbourhoods within the area */
   suburbs?: string[]
+  /** Optional: override the province — AJT Enterprise covers both Gauteng and Limpopo */
+  region?: 'Gauteng' | 'Limpopo'
 }
 
-export default function AreaSchema({ areaName, url, suburbs }: AreaSchemaProps) {
+export default function AreaSchema({ areaName, url, suburbs, region = 'Gauteng' }: AreaSchemaProps) {
   if (!areaName?.trim() || !url?.trim()) return null
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': BUSINESS_ID,
-    name: 'Madimetsa Logistics',
-    description: `Freight transport, warehousing, fleet management and cross border logistics serving ${areaName} and surrounding areas.`,
+    name: 'AJT Enterprise',
+    description: `Shadeport and carport installation, repairs and maintenance serving ${areaName} and surrounding areas.`,
     url: BASE_URL,
-    telephone: '+27723089983',
-    email: 'info@madimetsalogistics.co.za',
+    telephone: '+27658677363',
+    email: 'Info@ajtenterprise.co.za',
     priceRange: '$$',
     currenciesAccepted: 'ZAR',
     paymentAccepted: 'Cash, EFT',
@@ -27,7 +29,7 @@ export default function AreaSchema({ areaName, url, suburbs }: AreaSchemaProps) 
     address: {
       '@type': 'PostalAddress',
       addressLocality: areaName,
-      addressRegion: 'Gauteng',
+      addressRegion: region,
       addressCountry: 'ZA',
     },
     areaServed: [
@@ -36,7 +38,7 @@ export default function AreaSchema({ areaName, url, suburbs }: AreaSchemaProps) 
         name: areaName,
         containedInPlace: {
           '@type': 'State',
-          name: 'Gauteng',
+          name: region,
           containedInPlace: {
             '@type': 'Country',
             name: 'South Africa',
@@ -56,16 +58,16 @@ export default function AreaSchema({ areaName, url, suburbs }: AreaSchemaProps) 
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: `Logistics Services in ${areaName}`,
+      name: `Shadeport & Carport Services in ${areaName}`,
       itemListElement: [
-        'Freight Transport',
-        'Warehousing & Distribution',
-        'Fleet Management',
-        'Supply Chain Solutions',
-        'Cross Border Logistics',
-        'Express Delivery',
-        'Contract Logistics',
-        'Freight Forwarding',
+        'Shadeport Installation',
+        'Cantilever Shadeports',
+        'Carports',
+        'Carport Installation',
+        'Parking Bay Shadeports',
+        'Shadeport Repairs',
+        'Shadeport Maintenance',
+        'Shadeport Re-Covering',
       ].map((service, i) => ({
         '@type': 'ListItem',
         position: i + 1,
