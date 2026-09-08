@@ -17,12 +17,20 @@ const services = [
 ]
 
 const areas = [
-  { name: 'Johannesburg', region: 'Gauteng' },
-  { name: 'Pretoria', region: 'Gauteng' },
-  { name: 'Sandton', region: 'Gauteng' },
-  { name: 'Centurion', region: 'Gauteng' },
-  { name: 'Polokwane', region: 'Limpopo' },
-  { name: 'Tzaneen', region: 'Limpopo' },
+  { name: 'Johannesburg', slug: 'johannesburg', region: 'Gauteng' },
+  { name: 'Pretoria', slug: 'pretoria', region: 'Gauteng' },
+  { name: 'Sandton', slug: 'sandton', region: 'Gauteng' },
+  { name: 'Centurion', slug: 'centurion', region: 'Gauteng' },
+  { name: 'Midrand', slug: 'midrand', region: 'Gauteng' },
+  { name: 'Randburg', slug: 'randburg', region: 'Gauteng' },
+  { name: 'Roodepoort', slug: 'roodepoort', region: 'Gauteng' },
+  { name: 'Vereeniging', slug: 'vereeniging', region: 'Gauteng' },
+  { name: 'Polokwane', slug: 'polokwane', region: 'Limpopo' },
+  { name: 'Tzaneen', slug: 'tzaneen', region: 'Limpopo' },
+  { name: 'Mokopane', slug: 'mokopane', region: 'Limpopo' },
+  { name: 'Thohoyandou', slug: 'thohoyandou', region: 'Limpopo' },
+  { name: 'Lephalale', slug: 'lephalale', region: 'Limpopo' },
+  { name: 'Bela-Bela', slug: 'bela-bela', region: 'Limpopo' },
 ]
 
 export default function SiteFooter() {
@@ -171,11 +179,14 @@ export default function SiteFooter() {
             <ul className="flex flex-col">
               {areas.map((area) => (
                 <li key={area.name}>
-                  <span className="flex items-center gap-2 py-[7px] border-b border-white/[0.04] text-white/50 text-[12.5px]">
-                    <span className="w-1 h-1 shrink-0" style={{ background: `${GOLD}4d` }} />
+                  <Link
+                    href={`/shadeport-${area.slug}`}
+                    className="group flex items-center gap-2 py-[7px] border-b border-white/[0.04] transition-colors hover:text-white text-white/50 text-[12.5px]"
+                  >
+                    <span className="w-1 h-1 shrink-0 transition-colors" style={{ background: `${GOLD}4d` }} />
                     {area.name}
                     <span className="text-white/25 text-[10px]">· {area.region}</span>
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>
