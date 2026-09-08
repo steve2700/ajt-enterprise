@@ -205,7 +205,7 @@ export default function SiteFooter() {
               </ul>
             </div>
             <Link
-              href="/contact"
+              href="/areas"
               style={{ color: GOLD }}
               className="flex items-center gap-1.5 mt-3 text-[11px] font-bold tracking-[0.2em] uppercase hover:text-white transition-colors"
             >
