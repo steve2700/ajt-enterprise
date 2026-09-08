@@ -129,8 +129,7 @@ const otherAreas = {
     { name: 'Bela-Bela', slug: 'bela-bela' },
   ],
 }
-// Only Johannesburg is live so far — flip a slug to true here the moment its page ships
-const builtAreaSlugs = new Set<string>([])
+// All 14 area pages are confirmed and shipping — every area below links out.
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -395,20 +394,16 @@ export default function JohannesburgAreaPage() {
                   {region === 'gauteng' ? 'Gauteng' : 'Limpopo'}
                 </p>
                 <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5">
-                  {otherAreas[region].map((area) => {
-                    const isBuilt = builtAreaSlugs.has(area.slug)
-                    return (
-                      <li key={area.slug}>
-                        {isBuilt ? (
-                          <Link href={`/shadeport-${area.slug}`} className="text-sm font-medium text-[#1a1a1a]/65 hover:text-[#1a1a1a] transition-colors">
-                            {area.name}
-                          </Link>
-                        ) : (
-                          <span className="block text-sm font-medium text-[#1a1a1a]/50 cursor-default">{area.name}</span>
-                        )}
-                      </li>
-                    )
-                  })}
+                  {otherAreas[region].map((area) => (
+                    <li key={area.slug}>
+                      <Link
+                        href={`/shadeport-${area.slug}`}
+                        className="text-sm font-medium text-[#1a1a1a]/65 hover:text-[#8a6535] transition-colors"
+                      >
+                        {area.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}
