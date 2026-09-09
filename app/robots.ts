@@ -1,12 +1,12 @@
 import type { MetadataRoute } from 'next'
 
-const baseUrl = 'https://www.madimetsalogistics.co.za'
+const baseUrl = 'https://www.ajtenterprise.co.za'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
-        // Default rule — applies to any crawler not matched below
+        // Default rule, applies to any crawler not matched below
         userAgent: '*',
         allow: '/',
         disallow: [
@@ -34,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: ['/', '/images/', '/_next/image'],
       },
       {
-        // AI crawlers — allowed on purpose, so tools like ChatGPT, Claude,
+        // AI crawlers, allowed on purpose, so tools like ChatGPT, Claude,
         // Perplexity and Google's AI features can reference and cite this
         // site in their answers.
         userAgent: [
